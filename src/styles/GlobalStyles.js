@@ -1,12 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import { COLORS } from '../constants/colors';
 
 const styled = { createGlobalStyle };
 
 const GlobalStyles = styled.createGlobalStyle`
-	:root {
-		--swiper-pagination-color: ${COLORS.primary};
-	}
+
 	*,
 	*::after,
 	*::before {
@@ -27,21 +24,15 @@ const GlobalStyles = styled.createGlobalStyle`
 		padding-left: 0;
 	}
 	body {
-		font-family: sans-serif;
 		margin: 0;
-		font-family: 'Inter', sans-serif;
+		font-family: 'Poppins', sans-serif;
 	}
 	img {
 		max-width: 200px;
 	}
-	h1,
-	h2,
-	h3 {
-		font-family: 'Judson', serif;
-	}
-	.cursive {
-		font-family: 'Italianno', cursive;
-	}
+
+	
+	
 `;
 
 export { GlobalStyles };
